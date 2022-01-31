@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* 
+Font: Lora/ Work sans
+Farbe: #2e2e2e / #fff / #000 / #1d2c2f 
+Link Youtube: https://www.youtube.com/watch?v=GI71fXmRrLM
+
+font-family: 'Lora', serif;
+font-family: 'Work Sans', sans-serif;
+
+Must have: 
+
+mit JS ein console.log von dem User-Input im Formular
+
+Bonus:
+
+Media Queries auf 600px width */
+
+h1, h2{
+    font-family: 'Lora', serif;
+}
+
+p{
+    font-family: 'Work Sans', sans-serif;
+
+}
+/*------------Header----------*/
+
+header{
+    height: 100vh;
+    display: flex   ;
+}
+
+header section:nth-of-type(1){
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header section:nth-of-type(1) h1{
+    font-size: 5rem;
+    font-weight: 500;
+    font-family: 'Lora', serif;
+    letter-spacing: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+header section:nth-of-type(1) h2{
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+header section:nth-of-type(2){
+    width: 60%;
+    height: 100%;
+    background: url(../img/design-interior-1.jpg) no-repeat center/cover;
+}
+
+/*---------------Main---------------*/
+
+/*-Section-1-*/
+
+main{
+    position: relative;
+}
+main nav{
+    height: 10vh;
+    background-color: #2e2e2e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+}
+
+main nav img{
+    object-fit: cover;
+    object-position: center;
+    margin-left: 1rem;
+}
+main nav ul{
+    display: flex;
+    list-style: none;
+    margin-right: 10rem;
+}
+main nav ul li:not(:last-child){
+    margin-right: 16rem;
+}
+main nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+}
+
+main section:nth-of-type(1){
+    display: flex;
+    align-items: center;
+    height: 90vh;
+    background-color: #2e2e2e;
+}
+
+main section:nth-of-type(1) article:nth-of-type(1){
+    background: url(../img/story.jpg) no-repeat center/cover;
+    width: 80%;
+    height: 70%;
+}
+
+main section:nth-of-type(1) article:nth-of-type(2) h2{
+    color: #fff;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+main section:nth-of-type(1) article:nth-of-type(2) p{
+    color: rgba(255, 255, 255, 0.502);
+    line-height: 2rem;
+    margin: 2rem 4rem;
+}
+
+/*-Section-2-*/
+
+main section:nth-of-type(2){
+    height: 120vh;
+}
+
+main section:nth-of-type(2) article:nth-of-type(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15rem 0 2rem 0;
+}
+
+main section:nth-of-type(2) article:nth-of-type(1) h2{
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 100;
+}
+
+main section:nth-of-type(2) article:nth-of-type(1) p{
+    line-height: 2rem;
+    margin: 2rem 0;
+}
+
+main section:nth-of-type(2) article:nth-of-type(1) p::first-line{
+    word-spacing: 3rem;
+}
+
+main section:nth-of-type(2) article:nth-of-type(1) div{
+    width: 900px;
+    height: 200px;
+}
+
+
+main section:nth-of-type(2) article:nth-of-type(2) figure img{
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+main section:nth-of-type(2) article:nth-of-type(2){
+    display: flex;
+    justify-content: space-around;
+}
+
+main section:nth-of-type(2) article:nth-of-type(2) figure{
+    width: 25%;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.646);
+}
+
+main section:nth-of-type(2) article:nth-of-type(3){
+    margin: 5% 35.5%;
+}
+
+/*-Section-3-*/
+
+main section:nth-of-type(3){
+    height: 81vh;
+    background-color: #2e2e2e;
+    display: flex;
+    align-items: center;
+}
+
+main section:nth-of-type(3) article:nth-of-type(1){
+    margin: 0 7rem;
+    width: 30%;
+}
+
+main section:nth-of-type(3) article:nth-of-type(1) h2{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+main section:nth-of-type(3) article:nth-of-type(1) p{
+    color: #fff;
+    line-height: 2rem;
+    margin: 2rem 0;
+    letter-spacing: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+form{
+    font-family: 'Lora', serif;
+    color: #fff;
+    margin-left: 20rem;
+}
+
+label{
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+}
+
+main section:nth-of-type(3) article:nth-of-type(2) div:nth-of-type(2){
+    margin-bottom: 1rem;
+}
+
+main section:nth-of-type(3) article:nth-of-type(2) div:nth-of-type(4){
+    margin-bottom: 1rem;
+}
+
+main section:nth-of-type(3) article:nth-of-type(2) div:nth-of-type(6){
+    margin-bottom: 2rem;
+}
+
+input[type="submit"]{
+    padding: 5px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+}
+
+
+
+/*-Footer-*/
+
+footer{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1d2c2f;
+    font-family: 'Lora', serif;
+}
+
+footer p{
+    font-family: 'Lora', serif;
+    color: #fff;
+    margin-left: 2rem;
+}
+footer ul{
+    display: flex;
+}
+footer ul li{
+    list-style: none;
+    margin-right: 2rem;
+}
+
+footer ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+
+/*Media-Queries auf 600px width*/
+
+@media screen and (max-width: 600px) {
+    
+}
